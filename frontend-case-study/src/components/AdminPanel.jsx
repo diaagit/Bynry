@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "../styles/AdminPanel.css"; // Import the new CSS file
+import "../styles/AdminPanel.css"; 
 
 const AdminPanel = ({ profiles, setProfiles }) => {
   const [newProfile, setNewProfile] = useState({ name: "", description: "", category: "", address: "" });
-  const [editingId, setEditingId] = useState(null); // Track the profile being edited
+  const [editingId, setEditingId] = useState(null); 
 
   const handleAddProfile = () => {
     if (!newProfile.name || !newProfile.description) {
@@ -12,13 +12,13 @@ const AdminPanel = ({ profiles, setProfiles }) => {
     }
 
     if (editingId !== null) {
-      // Update existing profile
+     
       setProfiles(profiles.map((profile) =>
         profile.id === editingId ? { ...newProfile, id: editingId } : profile
       ));
       setEditingId(null);
     } else {
-      // Add new profile
+     
       setProfiles([...profiles, { ...newProfile, id: Date.now() }]);
     }
 
