@@ -1,0 +1,105 @@
+/* src/styles/AdminPanel.css */
+
+.admin-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .admin-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .admin-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .admin-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-button {
+    background: #28a745;
+  }
+  
+  .add-button:hover {
+    background: #218838;
+  }
+  
+  .edit-button {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .edit-button:hover {
+    background: #e0a800;
+  }
+  
+  .delete-button {
+    background: #dc3545;
+  }
+  
+  .delete-button:hover {
+    background: #c82333;
+  }
+  
+  .profile-list {
+    margin-top: 20px;
+  }
+  
+  .profile-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .profile-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile-info {
+    flex: 1;
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
